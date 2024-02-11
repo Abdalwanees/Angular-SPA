@@ -1,0 +1,160 @@
+<!-- <p>portfolio works!</p> -->
+
+<section id="portofilo">
+  <div
+    class="contact-header d-flex align-items-center justify-content-center flex-column"
+  >
+    <h2 class="fw-bold pt-5 name">PORTFOLIO COMPONENT</h2>
+    <div class="star">
+      <i class="fa-solid fa-star py-1 fa-2"></i>
+    </div>
+  </div>
+  <div class="container my-5">
+    <div class="row g-md-5 gy-5">
+      <div class="col-md-4">
+        <div class="position-relative pointer portfolio-card" (click)="show1()">
+          <div
+            class="layer bg-teal position-absolute top-0 start-0 end-0 bottom-0 rounded-2 d-flex justify-content-center align-items-center"
+          >
+            <i class="layer-icon fa-solid fa-plus"></i>
+          </div>
+          <img
+            src="./assets/image/poert1.png"
+            class="w-100 rounded-2"
+            alt="poert1"
+          />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="position-relative pointer portfolio-card" (click)="show2()">
+          <div
+            class="layer bg-teal position-absolute top-0 start-0 end-0 bottom-0 rounded-2 d-flex justify-content-center align-items-center"
+          >
+            <i class="layer-icon fa-solid fa-plus"></i>
+          </div>
+          <img
+            src="./assets/image/port2.png"
+            class="w-100 rounded-2"
+            alt="port2"
+          />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="position-relative pointer portfolio-card" (click)="show3()">
+          <div
+            class="layer bg-teal position-absolute top-0 start-0 end-0 bottom-0 rounded-2 d-flex justify-content-center align-items-center"
+          >
+            <i class="layer-icon fa-solid fa-plus"></i>
+          </div>
+          <img
+            src="./assets/image/port3.png"
+            class="w-100 rounded-2"
+            alt="port3"
+          />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="position-relative pointer portfolio-card" (click)="show1()">
+          <div
+            class="layer bg-teal position-absolute top-0 start-0 end-0 bottom-0 rounded-2 d-flex justify-content-center align-items-center"
+          >
+            <i class="layer-icon fa-solid fa-plus"></i>
+          </div>
+          <img
+            src="./assets/image/poert1.png"
+            class="w-100 rounded-2"
+            alt="poert1"
+          />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="position-relative pointer portfolio-card" (click)="show2()">
+          <div
+            class="layer bg-teal position-absolute top-0 start-0 end-0 bottom-0 rounded-2 d-flex justify-content-center align-items-center"
+          >
+            <i class="layer-icon fa-solid fa-plus"></i>
+          </div>
+          <img
+            src="./assets/image/port2.png "
+            class="w-100 rounded-2"
+            alt="port2"
+          />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="position-relative pointer portfolio-card" (click)="show3()">
+          <div
+            class="layer bg-teal position-absolute top-0 start-0 end-0 bottom-0 rounded-2 d-flex justify-content-center align-items-center"
+          >
+            <i class="layer-icon fa-solid fa-plus"></i>
+          </div>
+          <img
+            src="./assets/image/port3.png"
+            class="w-100 rounded-2"
+            alt="port3"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    *ngIf="img1"
+    class="model position-fixed d-flex align-items-center"
+    id="model"
+  >
+    <div
+      class="layer-model position-fixed top-0 start-0 end-0 bottom-0 z-n1"
+      (click)="close()"
+    ></div>
+    <div class="modal-card w-40 mx-auto">
+      <div class="position-relative">
+        <img [src]="imgesSrc[0]" class="w-100 rounded-2" alt="port1" />
+        <i
+          class="fa-regular fa-circle-xmark position-absolute colse-model-icon fs-3 pointer"
+          (click)="close()"
+        ></i>
+      </div>
+    </div>
+  </div>
+
+  <div
+    *ngIf="img2"
+    class="model position-fixed d-flex align-items-center"
+    id="model"
+  >
+    <div
+      class="layer-model position-fixed top-0 start-0 end-0 bottom-0 z-n1"
+      (click)="close()"
+    ></div>
+    <div class="modal-card w-40 mx-auto">
+      <div class="position-relative">
+        <img [src]="imgesSrc[1]" class="w-100 rounded-2" alt="port1" />
+        <i
+          class="fa-regular fa-circle-xmark position-absolute colse-model-icon fs-3 pointer"
+          (click)="close()"
+        ></i>
+      </div>
+    </div>
+  </div>
+
+  <div
+    *ngIf="img3"
+    class="model position-fixed d-flex align-items-center"
+    id="model"
+  >
+    <div
+      class="layer-model position-fixed top-0 start-0 end-0 bottom-0 z-n1"
+      (click)="close()"
+    ></div>
+    <div class="modal-card w-40 mx-auto">
+      <div class="position-relative">
+        <img [src]="imgesSrc[2]" class="w-100 rounded-2" alt="port1" />
+        <i
+          class="fa-regular fa-circle-xmark position-absolute colse-model-icon fs-3 pointer"
+          (click)="close()"
+        ></i>
+      </div>
+    </div>
+  </div>
+</section>

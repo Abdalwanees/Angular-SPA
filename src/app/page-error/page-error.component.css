@@ -1,0 +1,20 @@
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffffd7;
+  min-height: calc(100vh - 50px);
+}
+.fs {
+  font-size: 15px;
+}
+.btn {
+  background-color: #392467;
+  color: #fff;
+  margin-bottom: 1em;
+}
+.bg {
+  color: #392467;
+}
